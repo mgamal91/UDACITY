@@ -48,7 +48,7 @@ The project consists of 1 page, 2 sections.
 
 I use the "api_fetch.js" file for API so i created a "api_fetch.test.js" file inside the folder.
 ***(I included all the src/js files in testing.)***
-- [Testing Result](https://drive.google.com/file/d/1nMw8qGYAX30qLKx3A5EFmLSvUbtm-IkX/view?usp=sharing)
+- [Testing Result](https://drive.google.com/file/d/1UoT-kwjhQ8TpSW_Av04NLiWFHcwvr_HU/view?usp=sharing)
 
 ## <a name="tech">Technologies Used</a>:
 - HTML 
@@ -86,11 +86,13 @@ I use the "api_fetch.js" file for API so i created a "api_fetch.test.js" file in
         
 - For Production Env/runs on (localhost:3000):
 ***Note: If you made any modifications and need to re-build the dist folder start with 1 else do step 2 only)***
-1) npm run build-prod
-2) npm start
+- Console#1:
+        - npm run build-prod
+    - Console#2 (start express server):
+        - npm run start
 
 ## <a name="notes">Notes:</a>:
-- For URL check you recommended using "Regex" so i did some googling to understand how to do it, and i found the following on [stackoverflow](https://stackoverflow.com/questions/30970068/js-regex-url-validation), but i actually did more googling to understand the concept.
+- For URL check you recommended using "Regex" so i did some googling to understand how to do it, and i found the following on [stackoverflow](https://stackoverflow.com/questions/30970068/js-regex-url-validation), but i actually did more googling to understand the concept (inside the URL check i added all the comments i found)
 
 
 - The original package.json file was originally a file by "Mr.Mostafa Bohram" our group Session Lead
