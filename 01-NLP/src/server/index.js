@@ -68,7 +68,6 @@ app.post('/api', (req, res) => {
         redirect: 'follow'
     };
     //baseURL="https://api.meaningcloud.com/sentiment-2.1";
-    //fetch("https://api.meaningcloud.com/sentiment-2.1", requestOptions)
     fetch(baseURL, options)
         .then(response => response.json())
         .then(response => res.send(response))
