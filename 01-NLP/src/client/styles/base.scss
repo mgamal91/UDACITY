@@ -1,0 +1,47 @@
+@charset "utf-8";
+body {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Merriweather', serif;
+}
+
+
+/*Main*/
+
+main {
+    margin: auto;
+    width: 80vw;
+    height: 120vh;
+    background-color: rgba(153, 0, 127, 0.377);
+    padding-bottom: 2vh;
+}
+
+#mainContainer {
+    width: 70vw;
+    margin: auto;
+}
+
+.title {
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 1.5em;
+}
+
+.updatedFields {
+    background-color: thistle;
+    color: purple;
+    font-style: italic;
+    padding: 2vh 2vw;
+    height: 10vh;
+    width: 30vw;
+    border-radius: 1em;
+    margin: 1vh 0vh 2vh 0vh;
+}
+
+.outputDiv {
+    display: block;
+    float: left;
+    width: 30vw;
+    margin-right: 2vw;
+}

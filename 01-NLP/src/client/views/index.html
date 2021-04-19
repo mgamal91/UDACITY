@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Evaluate a News Article with Natural Language Processing!</title>
+</head>
+
+<body>
+    <main>
+        <div id="mainContainer">
+            <header>
+                <h1 id="mainH1">&#10002;Evaluate a News Article with Natural Language Processing!</h1>
+            </header>
+            <section>
+                <br>
+                <!-- <form class="" onsubmit="return ClientLib.urlCheckFn(event)"> -->
+                <section>
+                    <p>Enter Your URL here:</p>
+                    <section>
+                        <p id="demo"><span id="note">Note:</span> Please note that the data will take few seconds to appear, please be patient!</p>
+                    </section>
+                    <input type="text" placeholder="Enter URL Here!" id="myURL">
+                    <br>
+                    <input type="submit" id="generate" onclick="return Client.generateFn(event)">
+                    <p>Loading State:<span id=loadState></span></p>
+                </section>
+                <!-- </form> -->
+            </section>
+            <section>
+                <div class="holder entry">
+                    <div class="title">Output Result:</div>
+                    <div id="entryHolder">
+                        <div class="outputDiv">
+                            <label>Score Tag:</label>
+                            <div id="scoreTag" class="updatedFields"></div>
+                        </div>
+                        <div class="outputDiv">
+                            <label>Agreement:</label>
+                            <div id="agreement" class="updatedFields"></div>
+                        </div>
+                        <div class="outputDiv">
+                            <label>Subjectivity:</label>
+                            <div id="subjectivity" class="updatedFields"></div>
+                        </div>
+                        <div class="outputDiv">
+                            <label>Confidence:</label>
+                            <div id="confidence" class="updatedFields"></div>
+                        </div>
+                        <div class="outputDiv">
+                            <label>Irony:</label>
+                            <div id="irony" class="updatedFields"></div>
+                        </div>
+                        <div class="outputDiv">
+                            <label>Status Msg:</label>
+                            <div id="status" class="updatedFields"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    </main>
+    <footer>
+        <p>Thanks for Your Time!</p>
+        <p id="signature">Miada Gamal</p>
+    </footer>
+    <script>
+        // Check that service workers are supported
+        if ('serviceWorker' in navigator) {
+            // Use the window load event to keep the page load performant
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/service-worker.js');
+            });
+        }
+    </script>
+</body>
+
+</html>
