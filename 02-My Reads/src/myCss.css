@@ -1,0 +1,49 @@
+@charset "utf-8";
+body, .app {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Merriweather', serif;
+}
+
+/* main page */
+
+/* List-books */
+
+.list-books-title {
+    padding: 10px 0;
+    background-color: rgba(135, 207, 235, 0.37);
+    text-align: center;
+}
+  
+.list-books-title h1 {
+    margin:0 0 0 40vw;
+    color: white;
+    width: 200px;
+    text-align: center;
+    font-size: 4em;
+    font-family: 'Brush Script MT', cursive, Verdana, sans-serif;
+
+}
+/* Shelves */
+.shelfNameH1, .searchMsgH1
+{
+    text-align: center;
+}
+.bookShelfDiv
+{
+    background-color: rgba(135, 207, 235, 0.37);
+    width: 80vw;
+    margin: auto;
+}
+/* Footer */
+footer {
+    padding: 3em;
+    color: white;
+    height: auto;
+}
+
+.signature {
+    font-size: 2em;
+    font-family: 'Brush Script MT', cursive, Verdana, sans-serif;
+}
