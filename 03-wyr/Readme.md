@@ -1,187 +1,70 @@
-# Would You Rather Project
-## Project Overview:
+# Getting Started with Create React App
 
-In the "Would You Rather?" Project, you'll build a web app that lets a user play the “Would You Rather?” game. The game goes like this: A user is asked a question in the form: “Would you rather [option A] or [option B] ?”. Answering "neither" or "both" is against the rules.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-In your app, users will be able to answer questions, see which questions they haven’t answered, see how other people have voted, post questions, and see the ranking of users on the leaderboard.
-<hr>
+## Available Scripts
 
-## Table Of Content:
-- [Install And Start](#install_start)
-- [App Structure](#structure)
-- [Login Page](#login)
-- [Navigation Bar](#nav)
-- [Home Page](#home)
-- [New Question](#add)
-- [Leaderboard](#leader)
-- [Question](#question)
-- [Technologies Used](#tech)
-- [Problems](#problems)
-- [External Resources](#external)
+In the project directory, you can run:
 
-<hr>
+### `yarn start`
 
-## <a name="install_start"> Install And Start: </a>:
-- To Install project:
-    - npm install
-- To Launch:
-    - npm/yarn start
-- The Project run by default on: 
-    - localhost:3000
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-<hr>
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
 
-## <a name="structure">App Structure:</a>
-- Diagram(using draw.io)
-<img src="src/utils/media/structure/WYR-Progress.jpg">
-- The App have 4 main views/pages:
-    - Login Page
-    - Home Page
-    - New Question Page
-    - Leaderboard Page
+### `yarn test`
 
-<hr>
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-## <a name="login">Login Page:</a>
-<img src="src/utils/media/structure/login.jpg">
+### `yarn build`
 
-- The first page the user sees after starting the project.
-- The application allows the user to log out and log back in. 
-- The user should be logged in to submit new polling questions, vote, and view the leaderboard.
-- Once the user logs in, the home page is shown.
-- Whenever the user types something in the address bar, the user is asked to log in before the requested page is shown.
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-<hr>
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-## <a name="nav">Navigation Bar:</a>
-<img src="src/utils/media/structure/nav01.jpg">
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-- If user is not logged in the available options would be(But to actually see any of those target pages the user must log in first):
-    - Home
-    - New Question
-    - Leaderboard
+### `yarn eject`
 
-<img src="src/utils/media/structure/nav02.jpg">
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-- If user is logged in:
-    - Home
-    - New Question
-    - Leaderboard
-    - Name of logged in user
-    - Logout button.
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-<hr>
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-## <a name="home">Home Page:</a>
- <img src="src/utils/media/structure/home.jpg">
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-- By Default Unanswered Questions tab is selected.
-- User can navigate between the Answered/Unanswered Questions by using the tab they want.
-- The polls in both categories are arranged from the most recently created (top) to the least recently created (bottom).
-    - Unanswered Questions Tab:
-        - If all questions answered:
-            - Page informing user that all questions have been answered
-            - Link added to redirect user to adding a new question.
-        - If there are still non-answered questions:
-            - A list of unanswered questions will be shown where user can press on any question they want to answer
-    
-    - Answered Question Tab:
-        - If No question is answered:
-            - Page informing user that no questions answered yet
-        - If the user have question(s) answered:
-            - List of answered questions so user can press any of them
+## Learn More
 
-<hr>
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-## <a name="add">New Question:</a>
-<img src="src/utils/media/structure/new.jpg">
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-- A card with the username and img will be shown, the user can enter the options for the question they want.
-- If any of those 2 question fields(or both) are empty the submit button will be disabled.
-- After submitting the 2 fields and pressing submit the user will be redirected to the Home Page.
+### Code Splitting
 
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-<hr>
+### Analyzing the Bundle Size
 
-## <a name="leader">Leaderboard:</a>
-<img src="src/utils/media/structure/leader.jpg">
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-- The leaderboard contains list of WYR users.
-- The user card contains:
-    - Username
-    - User Img
-    - Number of Questions Asked
-    - Number of Questions Answered
-    - Score(Number of Questions Asked+Number of Questions Answered)
-    - The top 3 users in the leaderboard will have an icon with their rank above their img.
+### Making a Progressive Web App
 
-<hr>
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-## <a name="question">Question:</a>
+### Advanced Configuration
 
-- The question id can be seen in the URL bar (localhost:3000/questions/:question_id)
-- If the user entered the question id directly inside the URL:
-    - The user will be asked to login(even if already logged in).
-        - If question doesnt exist a 404 page will be shown
-        - If question exist:
-            - If question is not answered:
-                - The options are shown for user to pick
-                - After picking the choice the [question already answered ](#ans)page will be shown
-            <img src="src/utils/media/structure/qNotAns.jpg">
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-            - <a name="ans">If question already answered</a>:
-                - User selection(marked with a spinner)
-                - A bar to show percentage of each option
-                - Number of voters of each option
-            <img src="src/utils/media/structure/qAns.jpg">
-               
-<hr>
+### Deployment
 
-## <a name="tech">Technologies Used:</a>:
-- HTML 
-- CSS
-- Javascript
-    - React Library
-- Redux
-- FB (Create React App)
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-<hr>
+### `yarn build` fails to minify
 
-## <a name="problems">Problems:</a>:
-
-- Installing react-redux-loading kept on throwing errors to me(i think it is a compatibility issue), so had to handle loading and saving to API manually.
-    - components>>NewQuestionCard
-    - components>>PollNotAns
-
-<hr>
-
-## <a name="external">External Resources:</a>:
-
-- [Reactstrap](https://reactstrap.github.io/)
-    - To use:
-        - npm i --save bootstrap
-        - npm i --save reactstrap
-        - root index:
-            - import 'bootstrap/dist/css/bootstrap.min.css';
-        - Component where it is needed:
-            - import { compName } from "reactstrap";
-
-- [Semantic UI](https://semantic-ui.com/)
-
-- ReduxDevTools
-
-- Images:
-    - [PngFind](https://www.pngfind.com/)
-    - [Pikpng](https://www.pikpng.com/)
-    - [pngitem](https://www.pngitem.com/)
-    - Google
-
-
-*** <p style="color:blue">Thanks for your time: Miada Gamal</p> ***
-
-
-
-
-
-
-
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
