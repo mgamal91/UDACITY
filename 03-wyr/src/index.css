@@ -1,0 +1,331 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+/* New */
+/* Start of Home related styles */
+/* QuestionElement */
+.QuestionElementMainDiv {
+  width: 100%;
+  height: 230px;
+  display: block;
+  margin-top: 10px;
+  padding-right: 10px;
+  color: #0d6efd;
+}
+
+.QuestionElementUser {
+  width: 30%;
+  height: 220px;
+  display: block;
+  float: left;
+  border-right: 1px solid;
+  padding-right: 10px;
+}
+.QuestionElementUser img {
+  margin-top: 20%;
+}
+.QuestionElementUser p {
+  font-size: 1.5em;
+}
+.QuestionElementOptions {
+  width: 65%;
+  margin-left: 5%;
+  height: 200px;
+  display: block;
+  float: left;
+  text-align: center;
+}
+.QuestionElementOptionsText {
+  width: 100%;
+  height: 180px;
+  display: block;
+  float: left;
+  text-align: center;
+}
+.QuestionElementOptionsText h3 {
+  height: 35%;
+  background-color: rgba(43, 46, 226, 0.219);
+  overflow-wrap: break-word;
+  border-radius: 5px;
+  margin: auto;
+}
+
+.QuestionElementButton {
+  height: 20px;
+  display: block;
+  text-align: center;
+}
+
+/* Poll Not Answered Start*/
+.PollNotAnsMainDiv {
+  width: 550px;
+  border: 0.25em solid blue;
+  border-radius: 1em;
+  padding: 0.5em;
+  height: 45vh;
+  display: block;
+  margin: auto;
+  color: #0d6efd;
+}
+
+.PollNotAnsUserDiv,
+.newQuestionQDiv {
+  height: 100%;
+  display: block;
+  float: left;
+}
+.PollNotAnsUserDiv {
+  width: 25%;
+  border-right: blue solid 1px;
+}
+.PollNotAnsUserDiv img {
+  margin-top: 20%;
+}
+
+.PollNotAnsOptions {
+  width: 65%;
+  margin-left: 5%;
+
+  height: 100%;
+  display: block;
+  float: left;
+  text-align: center;
+}
+
+.PollNotAnsButtonsDiv {
+  height: 80%;
+}
+
+#PollNotAnsInput1,
+#PollNotAnsInput2 {
+  height: 35%;
+  overflow-wrap: break-word;
+}
+
+/* Poll Not Answered End*/
+/* Poll Answered Start */
+.PollAnsMainDiv {
+  width: 550px;
+  border: 0.25em solid blue;
+  border-radius: 1em;
+  padding: 0.5em;
+  height: 45vh;
+  display: block;
+  margin: auto;
+  color: #0d6efd;
+}
+.PollAnsUserDiv {
+  height: 100%;
+  display: block;
+  float: left;
+  width: 30%;
+  border-right: blue solid 1px;
+}
+.PollAnsUserDiv img {
+  margin-top: 20%;
+}
+/* Poll Answered End */
+/* End of Home related styles */
+/* P404 */
+.P404_header,
+.P404_p {
+  color: royalblue;
+  text-align: center;
+}
+.P404_header {
+  font-size: 6vh;
+  margin-top: 22vh;
+}
+.P404_p {
+  font-size: 2em;
+}
+.P404_img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+}
+.loginLogo {
+  width: 300px;
+}
+#cloudsA {
+  margin-top: 10px;
+  background-position-x: -140px;
+  animation: cloud_anim2 150s infinite;
+  animation-timing-function: linear;
+  background: url(utils/media/clouds1.png);
+}
+#cloudsB {
+  margin-top: 26px;
+  margin-left: 0px;
+  animation: cloud_anim 200s infinite;
+  animation-timing-function: linear;
+  background: url(utils/media/clouds3.png);
+}
+.clouds {
+  position: absolute;
+  width: 100%;
+  height: 120px;
+  left: 0px;
+  top: 6vh;
+  animation-timing-function: linear;
+}
+@keyframes cloud_anim {
+  from {
+    background-position: 0px 0px;
+  }
+  to {
+    background-position: 2000px 0px;
+  }
+}
+@keyframes cloud_anim2 {
+  0% {
+    background-position: 2000px 0px;
+  }
+  100% {
+    background-position: 0px 0px;
+  }
+}
+
+/* Leaderboard */
+.leaderBoardCardOuterDiv {
+  width: 550px;
+  border: 0.25em solid #0d6efd;
+  border-radius: 1em;
+  padding: 0.5em;
+  height: 40vh;
+  display: block;
+  margin-bottom: 5px;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    180deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(0, 212, 255, 1) 35%,
+    rgba(2, 0, 36, 1) 100%
+  );
+}
+.leaderBoardCardiconDiv,
+.leaderBoardCardImgDiv,
+.leaderBoardCardDataDiv,
+.scoreContainerDiv {
+  display: block;
+  float: left;
+}
+
+.leaderBoardCardImgDiv,
+.leaderBoardCardDataDiv,
+.scoreContainerDiv {
+  height: 100%;
+}
+.leaderBoardCardDataDiv h1 {
+  text-decoration: underline;
+}
+.leaderBoardCardiconDiv {
+  width: 5%;
+}
+.leaderBoardCardImgDiv {
+  width: 20%;
+  padding-top: 3em;
+}
+.leaderBoardCardDataDiv {
+  width: 50%;
+  background: rgba(9, 9, 121, 0.363);
+  text-align: center;
+  border: solid;
+  border-radius: 2em;
+  color: white;
+  margin-left: 5%;
+}
+.scoreContainerDiv {
+  width: 20%;
+}
+#scoreDiv {
+  width: 80%;
+  height: 40%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 20%;
+  border: solid;
+  color: white;
+  background-color: rgba(66, 44, 102, 0.308);
+  text-align: center;
+  margin-top: 40%;
+  margin-left: 10%;
+}
+#scoreP {
+  padding-top: 10px;
+}
+/* New Question */
+
+.newQuestionMainDiv {
+  width: 550px;
+  border: 0.25em solid blue;
+  border-radius: 1em;
+  padding: 0.5em;
+  height: 45vh;
+  display: block;
+  margin: auto;
+}
+.newQuestionUserDiv,
+.newQuestionQDiv {
+  height: 100%;
+  display: block;
+  float: left;
+}
+.newQuestionUserDiv {
+  width: 25%;
+  border-right: blue solid 1px;
+}
+.newQuestionUserDiv img {
+  margin-top: 20%;
+}
+
+.newQuestionQDiv {
+  width: 70%;
+  margin-left: 5%;
+
+  text-align: center;
+}
+.newQuestionQDiv h1,
+.newQuestionQDivForm h2,
+.newQuestionUserDiv h2 {
+  color: #0d6efd;
+}
+.newQuestionQDivForm {
+  width: 100%;
+  height: 28vh;
+}
+
+#newQuestionInput1,
+#newQuestionInput2 {
+  background-color: #0d6efd;
+  color: white;
+}
+.option-length {
+  text-align: right;
+  margin-top: 0.5em;
+  font-size: 0.75em;
+  color: #c3392a;
+}
+/* Nav */
+.NavLoggedUser {
+  margin-right: 20px;
+  color: #0d6efd;
+}
+/* AllDone:All Unanswered Questions Done */
+#allDoneImg {
+  width: 40vw;
+}
+#allDoneTexth2 {
+  color: #0d6efd;
+}
