@@ -1,0 +1,6 @@
+//receive
+export const RECEIVE_USERS='RECEIVE_USERS';
+export const RECEIVE_QUESTIONS='RECEIVE_QUESTIONS';
+export const SET_AUTHED_USER='SET_AUTHED_USER';
+export const LOG_OUT_USER='LOG_OUT_USER';
+export const ADD_QUESTION='ADD_QUESTION';
